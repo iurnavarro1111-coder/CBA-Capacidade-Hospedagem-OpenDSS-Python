@@ -31,8 +31,29 @@ BDGD_Transformers.dss
 
 PVSystems_Gerados.dss
 
+📊 Dados Originais da BDGD (Excel)
+Arquivos brutos extraídos da Base de Dados Geográfica da Distribuidora (BDGD) utilizados para a modelagem dos parâmetros da rede:
+
+CRVCRG.xlsx
+
+EQTRMT.xlsx
+
+PIP.xlsx
+
+RAMLIG.xlsx
+
+SEGCON.xlsx
+
+SSDBT.xlsx
+
+UCBT.xlsx
+
+UGBT.xlsx
+
+UNTRMT.xlsx
+
 🚀 Como Executar
-Pré-requisitos: Certifique-se de ter o ambiente Python configurado e todas as bibliotecas solicitadas no início do código instaladas (ex: py_dss_interface, pandas, matplotlib, numpy, etc.).
+Pré-requisitos: Certifique-se de ter o ambiente Python configurado e todas as bibliotecas solicitadas no início do código instaladas (ex: dss-python, pandas, matplotlib, numpy, etc.).
 
 Execução: Abra o script Caso_A_B_Dimensionado_Rev12.py na sua IDE de preferência e execute o código.
 
