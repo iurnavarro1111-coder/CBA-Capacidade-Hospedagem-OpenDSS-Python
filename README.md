@@ -1,6 +1,7 @@
 # CBA-Capacidade-Hospedagem-OpenDSS-Python
 Arquivos de simulação do artigo para o Congresso Brasileiro de Automática
 CBA - Capacidade de Hospedagem (OpenDSS + Python)
+
 Este repositório contém os dados e os códigos-fonte utilizados no artigo "Avaliação da Capacidade de Hospedagem de Sistemas Fotovoltaicos em Redes de Distribuição Utilizando Conexão Monofásica e Trifásica", submetido ao Congresso Brasileiro de Automática (CBA).
 
 📁 Estrutura dos Arquivos
