@@ -31,7 +31,7 @@ BDGD_Transformers.dss
 PVSystems_Gerados.dss
 
 🚀 Como Executar
-Pré-requisitos: Certifique-se de ter o ambiente Python configurado e todas as bibliotecas solicitadas no início do código instaladas (ex: dss-python, pandas, matplotlib, numpy, etc.).
+Pré-requisitos: Certifique-se de ter o ambiente Python configurado e todas as bibliotecas solicitadas no início do código instaladas (ex: py_dss_interface, pandas, matplotlib, numpy, etc.).
 
 Execução: Abra o script Caso_A_B_Dimensionado_Rev12.py na sua IDE de preferência e execute o código.
 
