@@ -1,0 +1,8 @@
+! ==================================================
+! Medidores, Monitores e Reatores de Transformadores (UNTRMT)
+! ==================================================
+! Medidor para Transformador: TRMT_2559631
+New EnergyMeter.Medidor_TRMT_2559631 element=Transformer.TRMT_2559631 terminal=1
+New Monitor.Potencia_TRMT_2559631 element=Transformer.TRMT_2559631 terminal=1 mode=1 ppolar=No
+! Reator de aterramento para TRMT_2559631
+New Reactor.Reator_TRMT_2559631 phases=1 bus1=2559631-9643855.4 R=15 X=0 basefreq=60

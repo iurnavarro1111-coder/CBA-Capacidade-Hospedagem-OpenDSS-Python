@@ -1,0 +1,442 @@
+! ==================================================
+! Monitores de Barras (SSDBT e RAMLIG)
+! ==================================================
+! Monitores para a Barra: 2559631-9643859 (conectados em Line.SBT_2559631_11346558)
+New Monitor.Potencia_2559631-9643859 element=Line.SBT_2559631_11346558 terminal=1 mode=1 ppolar=No
+New Monitor.Tensao_2559631-9643859 element=Line.SBT_2559631_11346558 terminal=1 mode=0 ppolar=No
+
+! Monitores para a Barra: 2559631-9643770 (conectados em Line.SBT_2559631_11346558)
+New Monitor.Potencia_2559631-9643770 element=Line.SBT_2559631_11346558 terminal=2 mode=1 ppolar=No
+New Monitor.Tensao_2559631-9643770 element=Line.SBT_2559631_11346558 terminal=2 mode=0 ppolar=No
+
+! Monitores para a Barra: 2559631-9643674 (conectados em Line.SBT_2559631_11346559)
+New Monitor.Potencia_2559631-9643674 element=Line.SBT_2559631_11346559 terminal=2 mode=1 ppolar=No
+New Monitor.Tensao_2559631-9643674 element=Line.SBT_2559631_11346559 terminal=2 mode=0 ppolar=No
+
+! Monitores para a Barra: 2559631-9643857 (conectados em Line.SBT_2559631_11346560)
+New Monitor.Potencia_2559631-9643857 element=Line.SBT_2559631_11346560 terminal=1 mode=1 ppolar=No
+New Monitor.Tensao_2559631-9643857 element=Line.SBT_2559631_11346560 terminal=1 mode=0 ppolar=No
+
+! Monitores para a Barra: 2559631-9643855 (conectados em Line.SBT_2559631_11346561)
+New Monitor.Potencia_2559631-9643855 element=Line.SBT_2559631_11346561 terminal=1 mode=1 ppolar=No
+New Monitor.Tensao_2559631-9643855 element=Line.SBT_2559631_11346561 terminal=1 mode=0 ppolar=No
+
+! Monitores para a Barra: 2559631-9644234 (conectados em Line.SBT_2559631_11346561)
+New Monitor.Potencia_2559631-9644234 element=Line.SBT_2559631_11346561 terminal=2 mode=1 ppolar=No
+New Monitor.Tensao_2559631-9644234 element=Line.SBT_2559631_11346561 terminal=2 mode=0 ppolar=No
+
+! Monitores para a Barra: 2559631-9644164 (conectados em Line.SBT_2559631_11346563)
+New Monitor.Potencia_2559631-9644164 element=Line.SBT_2559631_11346563 terminal=2 mode=1 ppolar=No
+New Monitor.Tensao_2559631-9644164 element=Line.SBT_2559631_11346563 terminal=2 mode=0 ppolar=No
+
+! Monitores para a Barra: 2559631-9644050 (conectados em Line.SBT_2559631_11346564)
+New Monitor.Potencia_2559631-9644050 element=Line.SBT_2559631_11346564 terminal=2 mode=1 ppolar=No
+New Monitor.Tensao_2559631-9644050 element=Line.SBT_2559631_11346564 terminal=2 mode=0 ppolar=No
+
+! Monitores para a Barra: 2559631-9644236 (conectados em Line.SBT_2559631_11346565)
+New Monitor.Potencia_2559631-9644236 element=Line.SBT_2559631_11346565 terminal=2 mode=1 ppolar=No
+New Monitor.Tensao_2559631-9644236 element=Line.SBT_2559631_11346565 terminal=2 mode=0 ppolar=No
+
+! Monitores para a Barra: 2559631-9643637 (conectados em Line.SBT_2559631_11346566)
+New Monitor.Potencia_2559631-9643637 element=Line.SBT_2559631_11346566 terminal=2 mode=1 ppolar=No
+New Monitor.Tensao_2559631-9643637 element=Line.SBT_2559631_11346566 terminal=2 mode=0 ppolar=No
+
+! Monitores para a Barra: 2559631-9644028 (conectados em Line.SBT_2559631_11346567)
+New Monitor.Potencia_2559631-9644028 element=Line.SBT_2559631_11346567 terminal=2 mode=1 ppolar=No
+New Monitor.Tensao_2559631-9644028 element=Line.SBT_2559631_11346567 terminal=2 mode=0 ppolar=No
+
+! Monitores para a Barra: 2559631-9644302 (conectados em Line.SBT_2559631_11346568)
+New Monitor.Potencia_2559631-9644302 element=Line.SBT_2559631_11346568 terminal=2 mode=1 ppolar=No
+New Monitor.Tensao_2559631-9644302 element=Line.SBT_2559631_11346568 terminal=2 mode=0 ppolar=No
+
+! Monitores para a Barra: 2559631-9643853 (conectados em Line.SBT_2559631_11346569)
+New Monitor.Potencia_2559631-9643853 element=Line.SBT_2559631_11346569 terminal=1 mode=1 ppolar=No
+New Monitor.Tensao_2559631-9643853 element=Line.SBT_2559631_11346569 terminal=1 mode=0 ppolar=No
+
+! Monitores para a Barra: 2559631-9644279 (conectados em Line.SBT_2559631_11346569)
+New Monitor.Potencia_2559631-9644279 element=Line.SBT_2559631_11346569 terminal=2 mode=1 ppolar=No
+New Monitor.Tensao_2559631-9644279 element=Line.SBT_2559631_11346569 terminal=2 mode=0 ppolar=No
+
+! Monitores para a Barra: 2559631-9643919 (conectados em Line.SBT_2559631_11346570)
+New Monitor.Potencia_2559631-9643919 element=Line.SBT_2559631_11346570 terminal=2 mode=1 ppolar=No
+New Monitor.Tensao_2559631-9643919 element=Line.SBT_2559631_11346570 terminal=2 mode=0 ppolar=No
+
+! Monitores para a Barra: 2559631-9643402 (conectados em Line.SBT_2559631_11347090)
+New Monitor.Potencia_2559631-9643402 element=Line.SBT_2559631_11347090 terminal=2 mode=1 ppolar=No
+New Monitor.Tensao_2559631-9643402 element=Line.SBT_2559631_11347090 terminal=2 mode=0 ppolar=No
+
+! Monitores para a Barra: 2559631-9643635 (conectados em Line.SBT_2559631_11347104)
+New Monitor.Potencia_2559631-9643635 element=Line.SBT_2559631_11347104 terminal=1 mode=1 ppolar=No
+New Monitor.Tensao_2559631-9643635 element=Line.SBT_2559631_11347104 terminal=1 mode=0 ppolar=No
+
+! Monitores para a Barra: 2559631-9643412 (conectados em Line.SBT_2559631_11347104)
+New Monitor.Potencia_2559631-9643412 element=Line.SBT_2559631_11347104 terminal=2 mode=1 ppolar=No
+New Monitor.Tensao_2559631-9643412 element=Line.SBT_2559631_11347104 terminal=2 mode=0 ppolar=No
+
+! Monitores para a Barra: 15997600PE (conectados em Line.RAM_13962827RM)
+New Monitor.Potencia_15997600PE element=Line.RAM_13962827RM terminal=2 mode=1 ppolar=No
+New Monitor.Tensao_15997600PE element=Line.RAM_13962827RM terminal=2 mode=0 ppolar=No
+
+! Monitores para a Barra: 17049541PE (conectados em Line.RAM_15039341RM)
+New Monitor.Potencia_17049541PE element=Line.RAM_15039341RM terminal=2 mode=1 ppolar=No
+New Monitor.Tensao_17049541PE element=Line.RAM_15039341RM terminal=2 mode=0 ppolar=No
+
+! Monitores para a Barra: 18256725PE (conectados em Line.RAM_16275699RM)
+New Monitor.Potencia_18256725PE element=Line.RAM_16275699RM terminal=2 mode=1 ppolar=No
+New Monitor.Tensao_18256725PE element=Line.RAM_16275699RM terminal=2 mode=0 ppolar=No
+
+! Monitores para a Barra: 17651187PE (conectados em Line.RAM_15602540RM)
+New Monitor.Potencia_17651187PE element=Line.RAM_15602540RM terminal=2 mode=1 ppolar=No
+New Monitor.Tensao_17651187PE element=Line.RAM_15602540RM terminal=2 mode=0 ppolar=No
+
+! Monitores para a Barra: 17762769PE (conectados em Line.RAM_15739422RM)
+New Monitor.Potencia_17762769PE element=Line.RAM_15739422RM terminal=2 mode=1 ppolar=No
+New Monitor.Tensao_17762769PE element=Line.RAM_15739422RM terminal=2 mode=0 ppolar=No
+
+! Monitores para a Barra: 18038684PE (conectados em Line.RAM_16055329RM)
+New Monitor.Potencia_18038684PE element=Line.RAM_16055329RM terminal=2 mode=1 ppolar=No
+New Monitor.Tensao_18038684PE element=Line.RAM_16055329RM terminal=2 mode=0 ppolar=No
+
+! Monitores para a Barra: 17941651PE (conectados em Line.RAM_15933197RM)
+New Monitor.Potencia_17941651PE element=Line.RAM_15933197RM terminal=2 mode=1 ppolar=No
+New Monitor.Tensao_17941651PE element=Line.RAM_15933197RM terminal=2 mode=0 ppolar=No
+
+! Monitores para a Barra: 18076617PE (conectados em Line.RAM_16095351RM)
+New Monitor.Potencia_18076617PE element=Line.RAM_16095351RM terminal=2 mode=1 ppolar=No
+New Monitor.Tensao_18076617PE element=Line.RAM_16095351RM terminal=2 mode=0 ppolar=No
+
+! Monitores para a Barra: 18077093PE (conectados em Line.RAM_16095827RM)
+New Monitor.Potencia_18077093PE element=Line.RAM_16095827RM terminal=2 mode=1 ppolar=No
+New Monitor.Tensao_18077093PE element=Line.RAM_16095827RM terminal=2 mode=0 ppolar=No
+
+! Monitores para a Barra: 17742781PE (conectados em Line.RAM_15707127RM)
+New Monitor.Potencia_17742781PE element=Line.RAM_15707127RM terminal=2 mode=1 ppolar=No
+New Monitor.Tensao_17742781PE element=Line.RAM_15707127RM terminal=2 mode=0 ppolar=No
+
+! Monitores para a Barra: 17568889PE (conectados em Line.RAM_15513031RM)
+New Monitor.Potencia_17568889PE element=Line.RAM_15513031RM terminal=2 mode=1 ppolar=No
+New Monitor.Tensao_17568889PE element=Line.RAM_15513031RM terminal=2 mode=0 ppolar=No
+
+! Monitores para a Barra: 18532628PE (conectados em Line.RAM_16401522RM)
+New Monitor.Potencia_18532628PE element=Line.RAM_16401522RM terminal=2 mode=1 ppolar=No
+New Monitor.Tensao_18532628PE element=Line.RAM_16401522RM terminal=2 mode=0 ppolar=No
+
+! Monitores para a Barra: 18534181PE (conectados em Line.RAM_16403075RM)
+New Monitor.Potencia_18534181PE element=Line.RAM_16403075RM terminal=2 mode=1 ppolar=No
+New Monitor.Tensao_18534181PE element=Line.RAM_16403075RM terminal=2 mode=0 ppolar=No
+
+! Monitores para a Barra: 18848940PE (conectados em Line.RAM_18305996RM)
+New Monitor.Potencia_18848940PE element=Line.RAM_18305996RM terminal=2 mode=1 ppolar=No
+New Monitor.Tensao_18848940PE element=Line.RAM_18305996RM terminal=2 mode=0 ppolar=No
+
+! Monitores para a Barra: 18848926PE (conectados em Line.RAM_18306372RM)
+New Monitor.Potencia_18848926PE element=Line.RAM_18306372RM terminal=2 mode=1 ppolar=No
+New Monitor.Tensao_18848926PE element=Line.RAM_18306372RM terminal=2 mode=0 ppolar=No
+
+! Monitores para a Barra: 18848925PE (conectados em Line.RAM_18306373RM)
+New Monitor.Potencia_18848925PE element=Line.RAM_18306373RM terminal=2 mode=1 ppolar=No
+New Monitor.Tensao_18848925PE element=Line.RAM_18306373RM terminal=2 mode=0 ppolar=No
+
+! Monitores para a Barra: 18848924PE (conectados em Line.RAM_18306374RM)
+New Monitor.Potencia_18848924PE element=Line.RAM_18306374RM terminal=2 mode=1 ppolar=No
+New Monitor.Tensao_18848924PE element=Line.RAM_18306374RM terminal=2 mode=0 ppolar=No
+
+! Monitores para a Barra: 20332585PE (conectados em Line.RAM_18318722RM)
+New Monitor.Potencia_20332585PE element=Line.RAM_18318722RM terminal=2 mode=1 ppolar=No
+New Monitor.Tensao_20332585PE element=Line.RAM_18318722RM terminal=2 mode=0 ppolar=No
+
+! Monitores para a Barra: 20221730PE (conectados em Line.RAM_18318723RM)
+New Monitor.Potencia_20221730PE element=Line.RAM_18318723RM terminal=2 mode=1 ppolar=No
+New Monitor.Tensao_20221730PE element=Line.RAM_18318723RM terminal=2 mode=0 ppolar=No
+
+! Monitores para a Barra: 20219987PE (conectados em Line.RAM_18318724RM)
+New Monitor.Potencia_20219987PE element=Line.RAM_18318724RM terminal=2 mode=1 ppolar=No
+New Monitor.Tensao_20219987PE element=Line.RAM_18318724RM terminal=2 mode=0 ppolar=No
+
+! Monitores para a Barra: 20214872PE (conectados em Line.RAM_18318725RM)
+New Monitor.Potencia_20214872PE element=Line.RAM_18318725RM terminal=2 mode=1 ppolar=No
+New Monitor.Tensao_20214872PE element=Line.RAM_18318725RM terminal=2 mode=0 ppolar=No
+
+! Monitores para a Barra: 18850070PE (conectados em Line.RAM_18319314RM)
+New Monitor.Potencia_18850070PE element=Line.RAM_18319314RM terminal=2 mode=1 ppolar=No
+New Monitor.Tensao_18850070PE element=Line.RAM_18319314RM terminal=2 mode=0 ppolar=No
+
+! Monitores para a Barra: 18850069PE (conectados em Line.RAM_18319315RM)
+New Monitor.Potencia_18850069PE element=Line.RAM_18319315RM terminal=2 mode=1 ppolar=No
+New Monitor.Tensao_18850069PE element=Line.RAM_18319315RM terminal=2 mode=0 ppolar=No
+
+! Monitores para a Barra: 18850068PE (conectados em Line.RAM_18319316RM)
+New Monitor.Potencia_18850068PE element=Line.RAM_18319316RM terminal=2 mode=1 ppolar=No
+New Monitor.Tensao_18850068PE element=Line.RAM_18319316RM terminal=2 mode=0 ppolar=No
+
+! Monitores para a Barra: 18850506PE (conectados em Line.RAM_18319818RM)
+New Monitor.Potencia_18850506PE element=Line.RAM_18319818RM terminal=2 mode=1 ppolar=No
+New Monitor.Tensao_18850506PE element=Line.RAM_18319818RM terminal=2 mode=0 ppolar=No
+
+! Monitores para a Barra: 20581066PE (conectados em Line.RAM_18319819RM)
+New Monitor.Potencia_20581066PE element=Line.RAM_18319819RM terminal=2 mode=1 ppolar=No
+New Monitor.Tensao_20581066PE element=Line.RAM_18319819RM terminal=2 mode=0 ppolar=No
+
+! Monitores para a Barra: 20496227PE (conectados em Line.RAM_18319820RM)
+New Monitor.Potencia_20496227PE element=Line.RAM_18319820RM terminal=2 mode=1 ppolar=No
+New Monitor.Tensao_20496227PE element=Line.RAM_18319820RM terminal=2 mode=0 ppolar=No
+
+! Monitores para a Barra: 20687416PE (conectados em Line.RAM_18319821RM)
+New Monitor.Potencia_20687416PE element=Line.RAM_18319821RM terminal=2 mode=1 ppolar=No
+New Monitor.Tensao_20687416PE element=Line.RAM_18319821RM terminal=2 mode=0 ppolar=No
+
+! Monitores para a Barra: 20580346PE (conectados em Line.RAM_18319822RM)
+New Monitor.Potencia_20580346PE element=Line.RAM_18319822RM terminal=2 mode=1 ppolar=No
+New Monitor.Tensao_20580346PE element=Line.RAM_18319822RM terminal=2 mode=0 ppolar=No
+
+! Monitores para a Barra: 20710855PE (conectados em Line.RAM_18319823RM)
+New Monitor.Potencia_20710855PE element=Line.RAM_18319823RM terminal=2 mode=1 ppolar=No
+New Monitor.Tensao_20710855PE element=Line.RAM_18319823RM terminal=2 mode=0 ppolar=No
+
+! Monitores para a Barra: 20629347PE (conectados em Line.RAM_18319824RM)
+New Monitor.Potencia_20629347PE element=Line.RAM_18319824RM terminal=2 mode=1 ppolar=No
+New Monitor.Tensao_20629347PE element=Line.RAM_18319824RM terminal=2 mode=0 ppolar=No
+
+! Monitores para a Barra: 20607192PE (conectados em Line.RAM_18319825RM)
+New Monitor.Potencia_20607192PE element=Line.RAM_18319825RM terminal=2 mode=1 ppolar=No
+New Monitor.Tensao_20607192PE element=Line.RAM_18319825RM terminal=2 mode=0 ppolar=No
+
+! Monitores para a Barra: 20607191PE (conectados em Line.RAM_18319826RM)
+New Monitor.Potencia_20607191PE element=Line.RAM_18319826RM terminal=2 mode=1 ppolar=No
+New Monitor.Tensao_20607191PE element=Line.RAM_18319826RM terminal=2 mode=0 ppolar=No
+
+! Monitores para a Barra: 20607190PE (conectados em Line.RAM_18319827RM)
+New Monitor.Potencia_20607190PE element=Line.RAM_18319827RM terminal=2 mode=1 ppolar=No
+New Monitor.Tensao_20607190PE element=Line.RAM_18319827RM terminal=2 mode=0 ppolar=No
+
+! Monitores para a Barra: 20585340PE (conectados em Line.RAM_18319828RM)
+New Monitor.Potencia_20585340PE element=Line.RAM_18319828RM terminal=2 mode=1 ppolar=No
+New Monitor.Tensao_20585340PE element=Line.RAM_18319828RM terminal=2 mode=0 ppolar=No
+
+! Monitores para a Barra: 20485255PE (conectados em Line.RAM_18319829RM)
+New Monitor.Potencia_20485255PE element=Line.RAM_18319829RM terminal=2 mode=1 ppolar=No
+New Monitor.Tensao_20485255PE element=Line.RAM_18319829RM terminal=2 mode=0 ppolar=No
+
+! Monitores para a Barra: 18850701PE (conectados em Line.RAM_18320309RM)
+New Monitor.Potencia_18850701PE element=Line.RAM_18320309RM terminal=2 mode=1 ppolar=No
+New Monitor.Tensao_18850701PE element=Line.RAM_18320309RM terminal=2 mode=0 ppolar=No
+
+! Monitores para a Barra: 18850700PE (conectados em Line.RAM_18320310RM)
+New Monitor.Potencia_18850700PE element=Line.RAM_18320310RM terminal=2 mode=1 ppolar=No
+New Monitor.Tensao_18850700PE element=Line.RAM_18320310RM terminal=2 mode=0 ppolar=No
+
+! Monitores para a Barra: 18850699PE (conectados em Line.RAM_18320311RM)
+New Monitor.Potencia_18850699PE element=Line.RAM_18320311RM terminal=2 mode=1 ppolar=No
+New Monitor.Tensao_18850699PE element=Line.RAM_18320311RM terminal=2 mode=0 ppolar=No
+
+! Monitores para a Barra: 20426723PE (conectados em Line.RAM_18320419RM)
+New Monitor.Potencia_20426723PE element=Line.RAM_18320419RM terminal=2 mode=1 ppolar=No
+New Monitor.Tensao_20426723PE element=Line.RAM_18320419RM terminal=2 mode=0 ppolar=No
+
+! Monitores para a Barra: 20382238PE (conectados em Line.RAM_18320420RM)
+New Monitor.Potencia_20382238PE element=Line.RAM_18320420RM terminal=2 mode=1 ppolar=No
+New Monitor.Tensao_20382238PE element=Line.RAM_18320420RM terminal=2 mode=0 ppolar=No
+
+! Monitores para a Barra: 20382237PE (conectados em Line.RAM_18320421RM)
+New Monitor.Potencia_20382237PE element=Line.RAM_18320421RM terminal=2 mode=1 ppolar=No
+New Monitor.Tensao_20382237PE element=Line.RAM_18320421RM terminal=2 mode=0 ppolar=No
+
+! Monitores para a Barra: 20345127PE (conectados em Line.RAM_18320422RM)
+New Monitor.Potencia_20345127PE element=Line.RAM_18320422RM terminal=2 mode=1 ppolar=No
+New Monitor.Tensao_20345127PE element=Line.RAM_18320422RM terminal=2 mode=0 ppolar=No
+
+! Monitores para a Barra: 20338938PE (conectados em Line.RAM_18320423RM)
+New Monitor.Potencia_20338938PE element=Line.RAM_18320423RM terminal=2 mode=1 ppolar=No
+New Monitor.Tensao_20338938PE element=Line.RAM_18320423RM terminal=2 mode=0 ppolar=No
+
+! Monitores para a Barra: 20328329PE (conectados em Line.RAM_18320424RM)
+New Monitor.Potencia_20328329PE element=Line.RAM_18320424RM terminal=2 mode=1 ppolar=No
+New Monitor.Tensao_20328329PE element=Line.RAM_18320424RM terminal=2 mode=0 ppolar=No
+
+! Monitores para a Barra: 20326985PE (conectados em Line.RAM_18320425RM)
+New Monitor.Potencia_20326985PE element=Line.RAM_18320425RM terminal=2 mode=1 ppolar=No
+New Monitor.Tensao_20326985PE element=Line.RAM_18320425RM terminal=2 mode=0 ppolar=No
+
+! Monitores para a Barra: 20326335PE (conectados em Line.RAM_18320426RM)
+New Monitor.Potencia_20326335PE element=Line.RAM_18320426RM terminal=2 mode=1 ppolar=No
+New Monitor.Tensao_20326335PE element=Line.RAM_18320426RM terminal=2 mode=0 ppolar=No
+
+! Monitores para a Barra: 20326334PE (conectados em Line.RAM_18320427RM)
+New Monitor.Potencia_20326334PE element=Line.RAM_18320427RM terminal=2 mode=1 ppolar=No
+New Monitor.Tensao_20326334PE element=Line.RAM_18320427RM terminal=2 mode=0 ppolar=No
+
+! Monitores para a Barra: 20319900PE (conectados em Line.RAM_18320428RM)
+New Monitor.Potencia_20319900PE element=Line.RAM_18320428RM terminal=2 mode=1 ppolar=No
+New Monitor.Tensao_20319900PE element=Line.RAM_18320428RM terminal=2 mode=0 ppolar=No
+
+! Monitores para a Barra: 20318411PE (conectados em Line.RAM_18320429RM)
+New Monitor.Potencia_20318411PE element=Line.RAM_18320429RM terminal=2 mode=1 ppolar=No
+New Monitor.Tensao_20318411PE element=Line.RAM_18320429RM terminal=2 mode=0 ppolar=No
+
+! Monitores para a Barra: 20216294PE (conectados em Line.RAM_18320430RM)
+New Monitor.Potencia_20216294PE element=Line.RAM_18320430RM terminal=2 mode=1 ppolar=No
+New Monitor.Tensao_20216294PE element=Line.RAM_18320430RM terminal=2 mode=0 ppolar=No
+
+! Monitores para a Barra: 20703811PE (conectados em Line.RAM_18321128RM)
+New Monitor.Potencia_20703811PE element=Line.RAM_18321128RM terminal=2 mode=1 ppolar=No
+New Monitor.Tensao_20703811PE element=Line.RAM_18321128RM terminal=2 mode=0 ppolar=No
+
+! Monitores para a Barra: 20608436PE (conectados em Line.RAM_18321129RM)
+New Monitor.Potencia_20608436PE element=Line.RAM_18321129RM terminal=2 mode=1 ppolar=No
+New Monitor.Tensao_20608436PE element=Line.RAM_18321129RM terminal=2 mode=0 ppolar=No
+
+! Monitores para a Barra: 20605941PE (conectados em Line.RAM_18321130RM)
+New Monitor.Potencia_20605941PE element=Line.RAM_18321130RM terminal=2 mode=1 ppolar=No
+New Monitor.Tensao_20605941PE element=Line.RAM_18321130RM terminal=2 mode=0 ppolar=No
+
+! Monitores para a Barra: 20507410PE (conectados em Line.RAM_18321131RM)
+New Monitor.Potencia_20507410PE element=Line.RAM_18321131RM terminal=2 mode=1 ppolar=No
+New Monitor.Tensao_20507410PE element=Line.RAM_18321131RM terminal=2 mode=0 ppolar=No
+
+! Monitores para a Barra: 20476159PE (conectados em Line.RAM_18321132RM)
+New Monitor.Potencia_20476159PE element=Line.RAM_18321132RM terminal=2 mode=1 ppolar=No
+New Monitor.Tensao_20476159PE element=Line.RAM_18321132RM terminal=2 mode=0 ppolar=No
+
+! Monitores para a Barra: 18851023PE (conectados em Line.RAM_18321238RM)
+New Monitor.Potencia_18851023PE element=Line.RAM_18321238RM terminal=2 mode=1 ppolar=No
+New Monitor.Tensao_18851023PE element=Line.RAM_18321238RM terminal=2 mode=0 ppolar=No
+
+! Monitores para a Barra: 18851022PE (conectados em Line.RAM_18321239RM)
+New Monitor.Potencia_18851022PE element=Line.RAM_18321239RM terminal=2 mode=1 ppolar=No
+New Monitor.Tensao_18851022PE element=Line.RAM_18321239RM terminal=2 mode=0 ppolar=No
+
+! Monitores para a Barra: 18851021PE (conectados em Line.RAM_18321240RM)
+New Monitor.Potencia_18851021PE element=Line.RAM_18321240RM terminal=2 mode=1 ppolar=No
+New Monitor.Tensao_18851021PE element=Line.RAM_18321240RM terminal=2 mode=0 ppolar=No
+
+! Monitores para a Barra: 18851020PE (conectados em Line.RAM_18321241RM)
+New Monitor.Potencia_18851020PE element=Line.RAM_18321241RM terminal=2 mode=1 ppolar=No
+New Monitor.Tensao_18851020PE element=Line.RAM_18321241RM terminal=2 mode=0 ppolar=No
+
+! Monitores para a Barra: 18851019PE (conectados em Line.RAM_18321242RM)
+New Monitor.Potencia_18851019PE element=Line.RAM_18321242RM terminal=2 mode=1 ppolar=No
+New Monitor.Tensao_18851019PE element=Line.RAM_18321242RM terminal=2 mode=0 ppolar=No
+
+! Monitores para a Barra: 18851018PE (conectados em Line.RAM_18321243RM)
+New Monitor.Potencia_18851018PE element=Line.RAM_18321243RM terminal=2 mode=1 ppolar=No
+New Monitor.Tensao_18851018PE element=Line.RAM_18321243RM terminal=2 mode=0 ppolar=No
+
+! Monitores para a Barra: 18851017PE (conectados em Line.RAM_18321244RM)
+New Monitor.Potencia_18851017PE element=Line.RAM_18321244RM terminal=2 mode=1 ppolar=No
+New Monitor.Tensao_18851017PE element=Line.RAM_18321244RM terminal=2 mode=0 ppolar=No
+
+! Monitores para a Barra: 20452908PE (conectados em Line.RAM_18321326RM)
+New Monitor.Potencia_20452908PE element=Line.RAM_18321326RM terminal=2 mode=1 ppolar=No
+New Monitor.Tensao_20452908PE element=Line.RAM_18321326RM terminal=2 mode=0 ppolar=No
+
+! Monitores para a Barra: 20427927PE (conectados em Line.RAM_18321327RM)
+New Monitor.Potencia_20427927PE element=Line.RAM_18321327RM terminal=2 mode=1 ppolar=No
+New Monitor.Tensao_20427927PE element=Line.RAM_18321327RM terminal=2 mode=0 ppolar=No
+
+! Monitores para a Barra: 20368844PE (conectados em Line.RAM_18321328RM)
+New Monitor.Potencia_20368844PE element=Line.RAM_18321328RM terminal=2 mode=1 ppolar=No
+New Monitor.Tensao_20368844PE element=Line.RAM_18321328RM terminal=2 mode=0 ppolar=No
+
+! Monitores para a Barra: 20325347PE (conectados em Line.RAM_18321329RM)
+New Monitor.Potencia_20325347PE element=Line.RAM_18321329RM terminal=2 mode=1 ppolar=No
+New Monitor.Tensao_20325347PE element=Line.RAM_18321329RM terminal=2 mode=0 ppolar=No
+
+! Monitores para a Barra: 20324401PE (conectados em Line.RAM_18321330RM)
+New Monitor.Potencia_20324401PE element=Line.RAM_18321330RM terminal=2 mode=1 ppolar=No
+New Monitor.Tensao_20324401PE element=Line.RAM_18321330RM terminal=2 mode=0 ppolar=No
+
+! Monitores para a Barra: 20321714PE (conectados em Line.RAM_18321331RM)
+New Monitor.Potencia_20321714PE element=Line.RAM_18321331RM terminal=2 mode=1 ppolar=No
+New Monitor.Tensao_20321714PE element=Line.RAM_18321331RM terminal=2 mode=0 ppolar=No
+
+! Monitores para a Barra: 20318326PE (conectados em Line.RAM_18321332RM)
+New Monitor.Potencia_20318326PE element=Line.RAM_18321332RM terminal=2 mode=1 ppolar=No
+New Monitor.Tensao_20318326PE element=Line.RAM_18321332RM terminal=2 mode=0 ppolar=No
+
+! Monitores para a Barra: 20318325PE (conectados em Line.RAM_18321333RM)
+New Monitor.Potencia_20318325PE element=Line.RAM_18321333RM terminal=2 mode=1 ppolar=No
+New Monitor.Tensao_20318325PE element=Line.RAM_18321333RM terminal=2 mode=0 ppolar=No
+
+! Monitores para a Barra: 20218177PE (conectados em Line.RAM_18321334RM)
+New Monitor.Potencia_20218177PE element=Line.RAM_18321334RM terminal=2 mode=1 ppolar=No
+New Monitor.Tensao_20218177PE element=Line.RAM_18321334RM terminal=2 mode=0 ppolar=No
+
+! Monitores para a Barra: 18960076PE (conectados em Line.RAM_18321809RM)
+New Monitor.Potencia_18960076PE element=Line.RAM_18321809RM terminal=2 mode=1 ppolar=No
+New Monitor.Tensao_18960076PE element=Line.RAM_18321809RM terminal=2 mode=0 ppolar=No
+
+! Monitores para a Barra: 18960075PE (conectados em Line.RAM_18321810RM)
+New Monitor.Potencia_18960075PE element=Line.RAM_18321810RM terminal=2 mode=1 ppolar=No
+New Monitor.Tensao_18960075PE element=Line.RAM_18321810RM terminal=2 mode=0 ppolar=No
+
+! Monitores para a Barra: 18960074PE (conectados em Line.RAM_18321811RM)
+New Monitor.Potencia_18960074PE element=Line.RAM_18321811RM terminal=2 mode=1 ppolar=No
+New Monitor.Tensao_18960074PE element=Line.RAM_18321811RM terminal=2 mode=0 ppolar=No
+
+! Monitores para a Barra: 20145261PE (conectados em Line.RAM_18321812RM)
+New Monitor.Potencia_20145261PE element=Line.RAM_18321812RM terminal=2 mode=1 ppolar=No
+New Monitor.Tensao_20145261PE element=Line.RAM_18321812RM terminal=2 mode=0 ppolar=No
+
+! Monitores para a Barra: 20114977PE (conectados em Line.RAM_18321813RM)
+New Monitor.Potencia_20114977PE element=Line.RAM_18321813RM terminal=2 mode=1 ppolar=No
+New Monitor.Tensao_20114977PE element=Line.RAM_18321813RM terminal=2 mode=0 ppolar=No
+
+! Monitores para a Barra: 20088684PE (conectados em Line.RAM_18321814RM)
+New Monitor.Potencia_20088684PE element=Line.RAM_18321814RM terminal=2 mode=1 ppolar=No
+New Monitor.Tensao_20088684PE element=Line.RAM_18321814RM terminal=2 mode=0 ppolar=No
+
+! Monitores para a Barra: 20072678PE (conectados em Line.RAM_18321815RM)
+New Monitor.Potencia_20072678PE element=Line.RAM_18321815RM terminal=2 mode=1 ppolar=No
+New Monitor.Tensao_20072678PE element=Line.RAM_18321815RM terminal=2 mode=0 ppolar=No
+
+! Monitores para a Barra: 18848662PE (conectados em Line.RAM_18321913RM)
+New Monitor.Potencia_18848662PE element=Line.RAM_18321913RM terminal=2 mode=1 ppolar=No
+New Monitor.Tensao_18848662PE element=Line.RAM_18321913RM terminal=2 mode=0 ppolar=No
+
+! Monitores para a Barra: 18848661PE (conectados em Line.RAM_18321914RM)
+New Monitor.Potencia_18848661PE element=Line.RAM_18321914RM terminal=2 mode=1 ppolar=No
+New Monitor.Tensao_18848661PE element=Line.RAM_18321914RM terminal=2 mode=0 ppolar=No
+
+! Monitores para a Barra: 18848660PE (conectados em Line.RAM_18321915RM)
+New Monitor.Potencia_18848660PE element=Line.RAM_18321915RM terminal=2 mode=1 ppolar=No
+New Monitor.Tensao_18848660PE element=Line.RAM_18321915RM terminal=2 mode=0 ppolar=No
+
+! Monitores para a Barra: 18848659PE (conectados em Line.RAM_18321916RM)
+New Monitor.Potencia_18848659PE element=Line.RAM_18321916RM terminal=2 mode=1 ppolar=No
+New Monitor.Tensao_18848659PE element=Line.RAM_18321916RM terminal=2 mode=0 ppolar=No
+
+! Monitores para a Barra: 20198109PE (conectados em Line.RAM_18322007RM)
+New Monitor.Potencia_20198109PE element=Line.RAM_18322007RM terminal=2 mode=1 ppolar=No
+New Monitor.Tensao_20198109PE element=Line.RAM_18322007RM terminal=2 mode=0 ppolar=No
+
+! Monitores para a Barra: 20142788PE (conectados em Line.RAM_18322008RM)
+New Monitor.Potencia_20142788PE element=Line.RAM_18322008RM terminal=2 mode=1 ppolar=No
+New Monitor.Tensao_20142788PE element=Line.RAM_18322008RM terminal=2 mode=0 ppolar=No
+
+! Monitores para a Barra: 20128427PE (conectados em Line.RAM_18322009RM)
+New Monitor.Potencia_20128427PE element=Line.RAM_18322009RM terminal=2 mode=1 ppolar=No
+New Monitor.Tensao_20128427PE element=Line.RAM_18322009RM terminal=2 mode=0 ppolar=No
+
+! Monitores para a Barra: 20109795PE (conectados em Line.RAM_18322010RM)
+New Monitor.Potencia_20109795PE element=Line.RAM_18322010RM terminal=2 mode=1 ppolar=No
+New Monitor.Tensao_20109795PE element=Line.RAM_18322010RM terminal=2 mode=0 ppolar=No
+
+! Monitores para a Barra: 20061309PE (conectados em Line.RAM_18322011RM)
+New Monitor.Potencia_20061309PE element=Line.RAM_18322011RM terminal=2 mode=1 ppolar=No
+New Monitor.Tensao_20061309PE element=Line.RAM_18322011RM terminal=2 mode=0 ppolar=No
+
+! Monitores para a Barra: 19995665PE (conectados em Line.RAM_18322012RM)
+New Monitor.Potencia_19995665PE element=Line.RAM_18322012RM terminal=2 mode=1 ppolar=No
+New Monitor.Tensao_19995665PE element=Line.RAM_18322012RM terminal=2 mode=0 ppolar=No
+
+! Monitores para a Barra: 19968121PE (conectados em Line.RAM_18322013RM)
+New Monitor.Potencia_19968121PE element=Line.RAM_18322013RM terminal=2 mode=1 ppolar=No
+New Monitor.Tensao_19968121PE element=Line.RAM_18322013RM terminal=2 mode=0 ppolar=No
+
+! Monitores para a Barra: 6302780PE (conectados em Line.RAM_4668578RM)
+New Monitor.Potencia_6302780PE element=Line.RAM_4668578RM terminal=2 mode=1 ppolar=No
+New Monitor.Tensao_6302780PE element=Line.RAM_4668578RM terminal=2 mode=0 ppolar=No
+
+! Monitores para a Barra: 20798392PE (conectados em Line.RAM_18745359RM)
+New Monitor.Potencia_20798392PE element=Line.RAM_18745359RM terminal=2 mode=1 ppolar=No
+New Monitor.Tensao_20798392PE element=Line.RAM_18745359RM terminal=2 mode=0 ppolar=No

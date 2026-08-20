@@ -1,0 +1,442 @@
+! ===================================================================
+! SCRIPT MESTRE DE SIMULAÇÃO (BDGD -> OpenDSS) - Com Medidor e Monitores
+! 
+! Este script cria a fonte de alimentação principal (subestação),
+! conecta-a a um transformador específico, carrega todos os elementos 
+! da rede BT (transformadores, linhas, cargas, geradores), adiciona 
+! medidores/monitores e executa uma simulação diária.
+! ===================================================================
+
+! Limpa qualquer simulação anterior
+Clear
+
+! 1. CRIAÇÃO DO CIRCUITO E FONTE DE ALIMENTAÇÃO (VSource)
+! Define um novo circuito e configura a fonte padrão 'Source'
+New Circuit.RedeBT_Filtrada_BDGD
+
+Edit VSource.Source
+~ BasekV=13.8     ! Tensão base de 13.8 kV (fase-fase)
+~ pu=1.0           ! Tensão de 1.0 p.u. na fonte
+~ Angle=0         ! Ângulo de 0 graus na fonte
+~ MVAsc3=4.80     ! MVA de curto trifásico
+~ MVAsc1=4.80     ! MVA de curto monofásico
+~ X1R1=1.2
+~ X0R0=1.2
+!~ R1=0.006453                   ! R1 em Ohms
+!~ X1=0.007744                   ! X1 em Ohms
+!~ R0=0.006453                   ! R0 em Ohms (R0=R1 para Dyn)
+!~ X0=0.007744                   ! X0 em Ohms (X0=X1 para Dyn)
+!~ X1R1=1.2
+!~ X0R0=1.2
+!~ MVAsc3=200000    ! Alta potência de curto trifásico (fonte ideal)
+!~ MVAsc1=210000    ! Alta potência de curto monofásico (fonte ideal)
+!~ R1=0.374674 X1=0.536452 R0=0.0001 X0=0.0001 ! Impedâncias muito baixas
+
+
+! 2. REDIRECIONAMENTO DOS FICHEIROS DE DEFINIÇÃO
+! Carrega primeiro os ficheiros que definem tipos (LineCodes, LoadShapes)
+Redirect BDGD_LineCodes.dss
+Redirect BDGD_LoadShapes.dss
+
+! 3. REDIRECIONAMENTO DOS FICHEIROS DE ELEMENTOS
+! Carrega os transformadores, incluindo o que será conectado à fonte
+Redirect BDGD_Transformers.dss 
+
+! 4. LINHA DE LIGAÇÃO (Fonte -> Transformador Específico)
+! Cria uma linha curta para ligar a fonte à barra primária do transformador
+! (Substitua 'NomeDoLineCodeApropriado' se tiver um definido, ou use parâmetros R/X)
+New Line.Linha_Alimentadora_Trafo
+~ Bus1=SourceBus.1.2.3           ! Barra da fonte (padrão do OpenDSS)
+~ Bus2=13743-9643854CF.1.2.3    ! Barra primária do transformador (conforme solicitado)
+~ Phases=3                        ! Assumindo linha trifásica
+~ R1=0.0001 X1=0.0001 R0=0.0001 X0=0.0001 Length=0.001 units=km ! Linha "ideal" de 1 metro
+
+! 5. REDIRECIONAMENTO DOS RESTANTES ELEMENTOS DA REDE
+! Carrega linhas de BT, ramais, cargas e geradores
+Redirect BDGD_Lines_SSDBT.dss
+Redirect BDGD_Lines_RAMLIG.dss
+Redirect BDGD_Loads_UCBT.dss
+!Redirect BDGD_Loads_PIP.dss
+!Redirect BDGD_Generators.dss  ! Inclui o LoadShape do Gerador
+
+! --- Redirecionamentos para Níveis de Penetração (NP) ---
+!Redirect PVSystems_NP25.dss
+!Redirect PVSystems_NP50.dss
+!Redirect PVSystems_NP75.dss
+!Redirect PVSystems_NP100.dss
+!Redirect PVSystems_NP125.dss
+!Redirect PVSystems_NP150.dss
+!Redirect PVSystems_NP175.dss
+!Redirect PVSystems_NP200.dss
+!Redirect PVSystems_NP250.dss
+!Redirect PVSystems_NP300.dss
+!Redirect PVSystems_Gerados.dss
+
+
+! --- Monitores ---
+Redirect BDGD_Monitors_Trafos_e_Reatores.dss
+Redirect BDGD_Monitors_Barras.dss
+
+! 6. DEFINIÇÃO DAS TENSÕES DE BASE
+Set Voltagebases=[13.8, 0.220] ! MT, BT (L-L)
+CalcVoltageBases  ! Calcula Vbase para todas as barras
+
+! 7. CONFIGURAÇÃO E EXECUÇÃO DA SIMULAÇÃO (MODO DIÁRIO)
+Set Mode=Daily     ! Modo de simulação diário
+Set stepsize=15m   ! Passo de 15 minutos
+Set number=96      ! Número de passos (96 * 15 min = 24 horas)
+
+!Set Number=1
+!Set Stepsize=1
+!Set Hour= 23.75
+
+
+! Resolve o fluxo de potência diário
+!Set Maxiter=100
+!Solve
+
+! ==================================================================
+! EXPORTAR DADOS DOS MONITORES (CONFORME SOLICITADO)
+! Exporta potência (apenas do TR) e tensões (apenas das barras)
+! ==================================================================
+
+! Exporta Monitor do Transformador
+Export Monitors Potencia_TRMT_2559631
+
+! --- Monitores de Barras (SSDBT e RAMLIG) ---
+
+! Exporta Monitores para a Barra: 2559631-9643859
+Export Monitors Tensao_2559631-9643859
+
+! Exporta Monitores para a Barra: 2559631-9643770
+Export Monitors Tensao_2559631-9643770
+
+! Exporta Monitores para a Barra: 2559631-9643674
+Export Monitors Tensao_2559631-9643674
+
+! Exporta Monitores para a Barra: 2559631-9643857
+Export Monitors Tensao_2559631-9643857
+
+! Exporta Monitores para a Barra: 2559631-9643855
+Export Monitors Tensao_2559631-9643855
+
+! Exporta Monitores para a Barra: 2559631-9644234
+Export Monitors Tensao_2559631-9644234
+
+! Exporta Monitores para a Barra: 2559631-9644164
+Export Monitors Tensao_2559631-9644164
+
+! Exporta Monitores para a Barra: 2559631-9644050
+Export Monitors Tensao_2559631-9644050
+
+! Exporta Monitores para a Barra: 2559631-9644236
+Export Monitors Tensao_2559631-9644236
+
+! Exporta Monitores para a Barra: 2559631-9643637
+Export Monitors Tensao_2559631-9643637
+
+! Exporta Monitores para a Barra: 2559631-9644028
+Export Monitors Tensao_2559631-9644028
+
+! Exporta Monitores para a Barra: 2559631-9644302
+Export Monitors Tensao_2559631-9644302
+
+! Exporta Monitores para a Barra: 2559631-9643853
+Export Monitors Tensao_2559631-9643853
+
+! Exporta Monitores para a Barra: 2559631-9644279
+Export Monitors Tensao_2559631-9644279
+
+! Exporta Monitores para a Barra: 2559631-9643919
+Export Monitors Tensao_2559631-9643919
+
+! Exporta Monitores para a Barra: 2559631-9643402
+Export Monitors Tensao_2559631-9643402
+
+! Exporta Monitores para a Barra: 2559631-9643635
+Export Monitors Tensao_2559631-9643635
+
+! Exporta Monitores para a Barra: 2559631-9643412
+Export Monitors Tensao_2559631-9643412
+
+! Exporta Monitores para a Barra: 15997600PE
+Export Monitors Tensao_15997600PE
+
+! Exporta Monitores para a Barra: 17049541PE
+Export Monitors Tensao_17049541PE
+
+! Exporta Monitores para a Barra: 18256725PE
+Export Monitors Tensao_18256725PE
+
+! Exporta Monitores para a Barra: 17651187PE
+Export Monitors Tensao_17651187PE
+
+! Exporta Monitores para a Barra: 17762769PE
+Export Monitors Tensao_17762769PE
+
+! Exporta Monitores para a Barra: 18038684PE
+Export Monitors Tensao_18038684PE
+
+! Exporta Monitores para a Barra: 17941651PE
+Export Monitors Tensao_17941651PE
+
+! Exporta Monitores para a Barra: 18076617PE
+Export Monitors Tensao_18076617PE
+
+! Exporta Monitores para a Barra: 18077093PE
+Export Monitors Tensao_18077093PE
+
+! Exporta Monitores para a Barra: 17742781PE
+Export Monitors Tensao_17742781PE
+
+! Exporta Monitores para a Barra: 17568889PE
+Export Monitors Tensao_17568889PE
+
+! Exporta Monitores para a Barra: 18532628PE
+Export Monitors Tensao_18532628PE
+
+! Exporta Monitores para a Barra: 18534181PE
+Export Monitors Tensao_18534181PE
+
+! Exporta Monitores para a Barra: 18848940PE
+Export Monitors Tensao_18848940PE
+
+! Exporta Monitores para a Barra: 18848926PE
+Export Monitors Tensao_18848926PE
+
+! Exporta Monitores para a Barra: 18848925PE
+Export Monitors Tensao_18848925PE
+
+! Exporta Monitores para a Barra: 18848924PE
+Export Monitors Tensao_18848924PE
+
+! Exporta Monitores para a Barra: 20332585PE
+Export Monitors Tensao_20332585PE
+
+! Exporta Monitores para a Barra: 20221730PE
+Export Monitors Tensao_20221730PE
+
+! Exporta Monitores para a Barra: 20219987PE
+Export Monitors Tensao_20219987PE
+
+! Exporta Monitores para a Barra: 20214872PE
+Export Monitors Tensao_20214872PE
+
+! Exporta Monitores para a Barra: 18850070PE
+Export Monitors Tensao_18850070PE
+
+! Exporta Monitores para a Barra: 18850069PE
+Export Monitors Tensao_18850069PE
+
+! Exporta Monitores para a Barra: 18850068PE
+Export Monitors Tensao_18850068PE
+
+! Exporta Monitores para a Barra: 18850506PE
+Export Monitors Tensao_18850506PE
+
+! Exporta Monitores para a Barra: 20581066PE
+Export Monitors Tensao_20581066PE
+
+! Exporta Monitores para a Barra: 20496227PE
+Export Monitors Tensao_20496227PE
+
+! Exporta Monitores para a Barra: 20687416PE
+Export Monitors Tensao_20687416PE
+
+! Exporta Monitores para a Barra: 20580346PE
+Export Monitors Tensao_20580346PE
+
+! Exporta Monitores para a Barra: 20710855PE
+Export Monitors Tensao_20710855PE
+
+! Exporta Monitores para a Barra: 20629347PE
+Export Monitors Tensao_20629347PE
+
+! Exporta Monitores para a Barra: 20607192PE
+Export Monitors Tensao_20607192PE
+
+! Exporta Monitores para a Barra: 20607191PE
+Export Monitors Tensao_20607191PE
+
+! Exporta Monitores para a Barra: 20607190PE
+Export Monitors Tensao_20607190PE
+
+! Exporta Monitores para a Barra: 20585340PE
+Export Monitors Tensao_20585340PE
+
+! Exporta Monitores para a Barra: 20485255PE
+Export Monitors Tensao_20485255PE
+
+! Exporta Monitores para a Barra: 18850701PE
+Export Monitors Tensao_18850701PE
+
+! Exporta Monitores para a Barra: 18850700PE
+Export Monitors Tensao_18850700PE
+
+! Exporta Monitores para a Barra: 18850699PE
+Export Monitors Tensao_18850699PE
+
+! Exporta Monitores para a Barra: 20426723PE
+Export Monitors Tensao_20426723PE
+
+! Exporta Monitores para a Barra: 20382238PE
+Export Monitors Tensao_20382238PE
+
+! Exporta Monitores para a Barra: 20382237PE
+Export Monitors Tensao_20382237PE
+
+! Exporta Monitores para a Barra: 20345127PE
+Export Monitors Tensao_20345127PE
+
+! Exporta Monitores para a Barra: 20338938PE
+Export Monitors Tensao_20338938PE
+
+! Exporta Monitores para a Barra: 20328329PE
+Export Monitors Tensao_20328329PE
+
+! Exporta Monitores para a Barra: 20326985PE
+Export Monitors Tensao_20326985PE
+
+! Exporta Monitores para a Barra: 20326335PE
+Export Monitors Tensao_20326335PE
+
+! Exporta Monitores para a Barra: 20326334PE
+Export Monitors Tensao_20326334PE
+
+! Exporta Monitores para a Barra: 20319900PE
+Export Monitors Tensao_20319900PE
+
+! Exporta Monitores para a Barra: 20318411PE
+Export Monitors Tensao_20318411PE
+
+! Exporta Monitores para a Barra: 20216294PE
+Export Monitors Tensao_20216294PE
+
+! Exporta Monitores para a Barra: 20703811PE
+Export Monitors Tensao_20703811PE
+
+! Exporta Monitores para a Barra: 20608436PE
+Export Monitors Tensao_20608436PE
+
+! Exporta Monitores para a Barra: 20605941PE
+Export Monitors Tensao_20605941PE
+
+! Exporta Monitores para a Barra: 20507410PE
+Export Monitors Tensao_20507410PE
+
+! Exporta Monitores para a Barra: 20476159PE
+Export Monitors Tensao_20476159PE
+
+! Exporta Monitores para a Barra: 18851023PE
+Export Monitors Tensao_18851023PE
+
+! Exporta Monitores para a Barra: 18851022PE
+Export Monitors Tensao_18851022PE
+
+! Exporta Monitores para a Barra: 18851021PE
+Export Monitors Tensao_18851021PE
+
+! Exporta Monitores para a Barra: 18851020PE
+Export Monitors Tensao_18851020PE
+
+! Exporta Monitores para a Barra: 18851019PE
+Export Monitors Tensao_18851019PE
+
+! Exporta Monitores para a Barra: 18851018PE
+Export Monitors Tensao_18851018PE
+
+! Exporta Monitores para a Barra: 18851017PE
+Export Monitors Tensao_18851017PE
+
+! Exporta Monitores para a Barra: 20452908PE
+Export Monitors Tensao_20452908PE
+
+! Exporta Monitores para a Barra: 20427927PE
+Export Monitors Tensao_20427927PE
+
+! Exporta Monitores para a Barra: 20368844PE
+Export Monitors Tensao_20368844PE
+
+! Exporta Monitores para a Barra: 20325347PE
+Export Monitors Tensao_20325347PE
+
+! Exporta Monitores para a Barra: 20324401PE
+Export Monitors Tensao_20324401PE
+
+! Exporta Monitores para a Barra: 20321714PE
+Export Monitors Tensao_20321714PE
+
+! Exporta Monitores para a Barra: 20318326PE
+Export Monitors Tensao_20318326PE
+
+! Exporta Monitores para a Barra: 20318325PE
+Export Monitors Tensao_20318325PE
+
+! Exporta Monitores para a Barra: 20218177PE
+Export Monitors Tensao_20218177PE
+
+! Exporta Monitores para a Barra: 18960076PE
+Export Monitors Tensao_18960076PE
+
+! Exporta Monitores para a Barra: 18960075PE
+Export Monitors Tensao_18960075PE
+
+! Exporta Monitores para a Barra: 18960074PE
+Export Monitors Tensao_18960074PE
+
+! Exporta Monitores para a Barra: 20145261PE
+Export Monitors Tensao_20145261PE
+
+! Exporta Monitores para a Barra: 20114977PE
+Export Monitors Tensao_20114977PE
+
+! Exporta Monitores para a Barra: 20088684PE
+Export Monitors Tensao_20088684PE
+
+! Exporta Monitores para a Barra: 20072678PE
+Export Monitors Tensao_20072678PE
+
+! Exporta Monitores para a Barra: 18848662PE
+Export Monitors Tensao_18848662PE
+
+! Exporta Monitores para a Barra: 18848661PE
+Export Monitors Tensao_18848661PE
+
+! Exporta Monitores para a Barra: 18848660PE
+Export Monitors Tensao_18848660PE
+
+! Exporta Monitores para a Barra: 18848659PE
+Export Monitors Tensao_18848659PE
+
+! Exporta Monitores para a Barra: 20198109PE
+Export Monitors Tensao_20198109PE
+
+! Exporta Monitores para a Barra: 20142788PE
+Export Monitors Tensao_20142788PE
+
+! Exporta Monitores para a Barra: 20128427PE
+Export Monitors Tensao_20128427PE
+
+! Exporta Monitores para a Barra: 20109795PE
+Export Monitors Tensao_20109795PE
+
+! Exporta Monitores para a Barra: 20061309PE
+Export Monitors Tensao_20061309PE
+
+! Exporta Monitores para a Barra: 19995665PE
+Export Monitors Tensao_19995665PE
+
+! Exporta Monitores para a Barra: 19968121PE
+Export Monitors Tensao_19968121PE
+
+! Exporta Monitores para a Barra: 6302780PE
+Export Monitors Tensao_6302780PE
+
+! Exporta Monitores para a Barra: 20798392PE
+Export Monitors Tensao_20798392PE
+
+! Nota: Os monitores de potência de barras/ramais (ex: Potencia_2559631-9643859)
+! não foram exportados, conforme solicitado.
+
+
+! (Fim do script mestre)

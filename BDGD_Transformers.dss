@@ -1,0 +1,8 @@
+! ==================================================
+! Transformers Gerados a partir de UNTRMT.xlsx e EQTRMT.xlsx
+! ==================================================
+New Transformer.TRMT_2559631
+~ phases=3 windings=2 XHL=1.2000
+~ %noloadloss=0.3400 %loadloss=1.3400
+~ wdg=1 bus=13743-9643854CF.1.2.3 conn=Delta kv=13.8 kva=75.0 tap=1.0
+~ wdg=2 bus=2559631-9643855.1.2.3.4 conn=Wye kv=0.22 kva=75.0 tap=1.033
